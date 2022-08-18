@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.todoApp {
+  min-height: 100vh;
+  background-image: url("./img/background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-todoApp {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+}
+.title-todo {
+  font-family: "Varela Round", sans-serif;
+  margin: 20px 0 20px;
+}
+.input-todo input {
+  width: 400px;
+  height: 50px;
+  padding: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.input-todo input:focus {
+  outline: none;
+}
+.button,
+#btn-submit {
+  width: 80px;
+  height: 38px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f33a58;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+.button:hover,
+#btn-submit:hover {
+  background-color: #d51031;
+}
+.list-todo {
+  max-height: 400px;
+  width: 500px;
+  border-radius: 14px;
+  background-color: #fff;
+  scroll-behavior: smooth;
+  overflow: auto;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+.list-todo::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+ul {
+  list-style: none;
+  padding: 20px 20px;
+}
+li {
+  display: flex;
+  height: 70px;
+  padding: 0 20px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  background: #eb895e;
+  border-radius: 7px;
+}
+p {
+  width: 75%;
+  padding: 0 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+}
+.btn-edit {
+  background-color: teal;
+}
+.copyright {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+.copyright-title {
+  width: 100%;
+  text-align: center;
+}
+.copyright-title a {
+  text-decoration: none;
+  color: #d51031;
+}
+.copyright-title a:hover {
+  opacity: 0.8;
+}
