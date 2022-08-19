@@ -6,6 +6,7 @@ function App() {
   const { todoInput, todos } = state;
   const [isEdit, setIsEdit] = useState(false);
   const [todoCurrent, setTodoCurrent] = useState();
+  const [update, setUpdate] = useState(false);
   const inputRef = useRef();
 
   useEffect(() => {
@@ -43,7 +44,6 @@ function App() {
     setTodoCurrent(index);
     dispatch(actions.setTodo(todos[index]));
     inputRef.current.focus();
-
     setIsEdit(true);
   };
   const handleUpdate = () => {

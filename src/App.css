@@ -111,7 +111,7 @@ p {
 /* Mobile : width < 740px */
 @media only screen and (max-width: 46.1875em) {
   .main-todoApp {
-    width: 100%;
+    width: 85%;
     height: 650px;
   }
   .input-todo {
