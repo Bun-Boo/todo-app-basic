@@ -120,6 +120,9 @@ p {
     justify-content: center;
     align-items: center;
   }
+  .input-todo > input {
+    width: 100%;
+  }
   .input-todo > button {
     margin: 20px;
   }
