@@ -6,7 +6,6 @@ function App() {
   const { todoInput, todos } = state;
   const [isEdit, setIsEdit] = useState(false);
   const [todoCurrent, setTodoCurrent] = useState();
-  const [update, setUpdate] = useState(false);
   const inputRef = useRef();
 
   useEffect(() => {
